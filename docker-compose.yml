@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sign-language-translator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - ./assets:/app/assets  # Mount assets directory for persistence
+    environment:
+      - PYTHONPATH=/app
+    ports:
+      - "8000:8000"  # If you need to expose any ports for web interface
+    tty: true  # Keep container running
+    stdin_open: true  # Keep container running
+    command: tail -f /dev/null  # Keep container running 

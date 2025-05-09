@@ -1,0 +1,13 @@
+streamlit>=1.22.0
+sign-language-translator[mediapipe]
+opencv-python>=4.5.0
+numpy>=1.21.0
+torch>=1.9.0
+pillow>=8.0.0
+tqdm
+requests
+click
+mediapipe>=0.10.0
+
+# optional
+deep_translator==1.11.4
